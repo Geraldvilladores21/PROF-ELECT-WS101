@@ -1,53 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>LOGIN</title>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/css1.css">
 </head>
 <body>
-    <style>
-        body{
-            background:rgb(149, 149, 161);
-        }
-        h1{
-            padding-bottom:50px;
-            text-align: center;
-            margin-top: 5px;
-            
-        }
-        header{
-            background-color: rgb(70, 145, 189);
-        }
-        #nav-bar{
-            padding-top: 40px;
-        }
-        ul,a{
-           padding-left: 30px; 
-        }
-        #m2{
-            text-align: center;
-        }
-        </style>
-            <div >
-                <header>
-                    <nav>
-                        <ul>
-                            <div id="nav-bar">
-                            <h1><a href="index.html"><span>HOME</span></a>
-                            <a href="about.html"><span>ABOUT</span></a>
-                            <a href="login.html"><span>LOGIN</span></a></h2>
-                            </div>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
-            <form action="/action_page.php" id="m2">
-                Username<br>
-                <input type="text" name="firstname">
-                <br>
-                Password<br>
-                <input type="text" name="lastname">
-                <br><br>
-                <input type="submit" value="Log in">
-              </form>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <h2 class="active"> Sign In </h2>
+    <h2 class="inactive underlineHover">Sign Up </h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In " formaction="index.html">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
 </body>
 </html>
